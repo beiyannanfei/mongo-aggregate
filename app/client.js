@@ -4,13 +4,13 @@
 "use strict";
 const mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
-mongoose.connect("mongodb://localhost/aggregate_test");
+mongoose.connect("mongodb://localhost/aggregate_test", {useMongoClient: true});
 const Schema = mongoose.Schema;
 
-let t1Schema = new Schema({
-	item: String,
-	qty: Number,
-	tags: [String],
-	dim_cm: [Number]
+let t01Schema = new Schema({
+	title: String,
+	isbn: String,
+	author: mongoose.Schema.Types.Mixed,
+	copies: Number
 }, {versionKey: false});
-exports.t1Model = mongoose.model("t1", t1Schema);
+exports.t01Model = mongoose.model("t01", t01Schema);
