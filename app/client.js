@@ -14,3 +14,10 @@ let t01Schema = new Schema({
 	copies: Number
 }, {versionKey: false});
 exports.t01Model = mongoose.model("t01", t01Schema);
+
+let t02Schema = new Schema({
+	author: String,
+	score: Number,
+	views: Number
+}, {versionKey: false});
+exports.t02Model = mongoose.model("t02", t02Schema);
