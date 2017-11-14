@@ -28,3 +28,15 @@ let t03Schema = new Schema({
 	sizes: mongoose.Schema.Types.Mixed
 }, {versionKey: false});
 exports.t03Model = mongoose.model("t03", t03Schema);
+
+let t04Schema = new Schema({
+	name: Number,
+	item: String,
+	price: Number,
+	quantity: Number,
+	date: Date,
+	title: String,
+	author: String,
+	copies: Number
+}, {versionKey: false});
+exports.t04Model = mongoose.model("t04", t04Schema);
