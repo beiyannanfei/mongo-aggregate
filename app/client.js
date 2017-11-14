@@ -21,3 +21,10 @@ let t02Schema = new Schema({
 	views: Number
 }, {versionKey: false});
 exports.t02Model = mongoose.model("t02", t02Schema);
+
+let t03Schema = new Schema({
+	name: String,
+	item: String,
+	sizes: mongoose.Schema.Types.Mixed
+}, {versionKey: false});
+exports.t03Model = mongoose.model("t03", t03Schema);
