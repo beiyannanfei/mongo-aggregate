@@ -40,3 +40,10 @@ let t04Schema = new Schema({
 	copies: Number
 }, {versionKey: false});
 exports.t04Model = mongoose.model("t04", t04Schema);
+
+let t05Schema = new Schema({
+	name: String,
+	q1: Boolean,
+	q2: Boolean
+}, {versionKey: false});
+exports.t05Model = mongoose.model("t05", t05Schema);
