@@ -69,3 +69,14 @@ let t07Schema = new Schema({
 	copies: Number
 }, {versionKey: false});
 exports.t07Model = mongoose.model("t07", t07Schema);
+
+let t08Schema = new Schema({
+	item: String,
+	price: Number,
+	quantity: Number,
+	type: String
+}, {versionKey: false});
+t08Schema.index({item: 1, quantity: 1});
+t08Schema.index({type: 1, item: 1});
+exports.t08Model = mongoose.model("t08", t08Schema);
+
