@@ -61,3 +61,11 @@ let t06_inventory = new Schema({
 	instock: Number
 }, {versionKey: false});
 exports.t06_inventory = mongoose.model("t06_inventory", t06_inventory);
+
+let t07Schema = new Schema({
+	name: Number,
+	title: String,
+	author: String,
+	copies: Number
+}, {versionKey: false});
+exports.t07Model = mongoose.model("t07", t07Schema);
