@@ -47,3 +47,17 @@ let t05Schema = new Schema({
 	q2: Boolean
 }, {versionKey: false});
 exports.t05Model = mongoose.model("t05", t05Schema);
+
+let t06_orders = new Schema({
+	item: String,
+	price: Number,
+	quantity: Number
+}, {versionKey: false});
+exports.t06_orders = mongoose.model("t06_orders", t06_orders);
+
+let t06_inventory = new Schema({
+	sku: String,
+	description: String,
+	instock: Number
+}, {versionKey: false});
+exports.t06_inventory = mongoose.model("t06_inventory", t06_inventory);
