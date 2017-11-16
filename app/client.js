@@ -80,3 +80,10 @@ t08Schema.index({item: 1, quantity: 1});
 t08Schema.index({type: 1, item: 1});
 exports.t08Model = mongoose.model("t08", t08Schema);
 
+let t09Schema = new Schema({
+	name: Number,
+	item: String,
+	description: String,
+	qty: Number
+}, {versionKey: false});
+exports.t09Model = mongoose.model("t09", t09Schema);

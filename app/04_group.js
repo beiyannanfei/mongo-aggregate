@@ -122,7 +122,7 @@ function run() {
 				}
 			}
 		]);
-		// console.log("aggregateResponse = %j;", aggregateResponse);
+		console.log("aggregateResponse = %j;", aggregateResponse);
 		aggregateResponse = [
 			{
 				"_id": "Homer",
