@@ -87,3 +87,11 @@ let t09Schema = new Schema({
 	qty: Number
 }, {versionKey: false});
 exports.t09Model = mongoose.model("t09", t09Schema);
+
+let t10Schema = new Schema({
+	name: Number,
+	item: String,
+	description: String,
+	qty: Number
+}, {versionKey: false});
+exports.t10Model = mongoose.model("t10", t10Schema);
